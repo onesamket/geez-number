@@ -1,10 +1,10 @@
 # Geez Number Converter
 
-[![npm version](https://img.shields.io/npm/v/@sabbat/geez-number.svg)](https://www.npmjs.com/package/@sabbat/geez-number)
+[![npm version](https://img.shields.io/npm/v/@onesamket/geez-number.svg)](https://www.npmjs.com/package/@onesamket/geez-number)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![TypeScript](https://img.shields.io/badge/TypeScript-4.7+-blue.svg)](https://www.typescriptlang.org/)
-[![Build Status](https://img.shields.io/github/workflow/status/onesamket/@sabbat/geez-number/CI)](https://github.com/onesamket/@sabbat/geez-number/actions)
-[![Coverage Status](https://img.shields.io/codecov/c/github/onesamket/@sabbat/geez-number)](https://codecov.io/gh/onesamket/@sabbat/geez-number)
+[![Build Status](https://img.shields.io/github/workflow/status/onesamket/geez-number/CI)](https://github.com/onesamket/geez-number/actions)
+[![Coverage Status](https://img.shields.io/codecov/c/github/onesamket/geez-number)](https://codecov.io/gh/onesamket/geez-number)
 
 A TypeScript library for converting between Arabic numerals and Geez (Ethiopic) numerals. Fully typed, thoroughly tested, and zero dependencies.
 
@@ -32,11 +32,11 @@ A TypeScript library for converting between Arabic numerals and Geez (Ethiopic) 
 ## Installation
 
 ```bash
-npm install @sabbat/geez-number
+npm install @onesamket/geez-number
 # or
-yarn add @sabbat/geez-number
+yarn add @onesamket/geez-number
 # or
-pnpm add @sabbat/geez-number
+pnpm add @onesamket/geez-number
 ```
 
 ## Basic Usage
@@ -46,7 +46,7 @@ pnpm add @sabbat/geez-number
 The most basic functionality is converting Arabic numerals to Geez numerals:
 
 ```typescript
-import { toGeez } from "@sabbat/geez-number";
+import { toGeez } from "@onesamket/geez-number";
 
 // Single digits
 console.log(toGeez(1)); // ፩
@@ -77,7 +77,7 @@ console.log(toGeez(9999)); // ፱፼፱፻፺፱
 You can also convert Geez numerals back to Arabic numbers:
 
 ```typescript
-import { fromGeez } from "geez-number-converter";
+import { fromGeez } from "@onesamket/geez-number";
 
 // Single digits
 console.log(fromGeez("፩")); // 1
@@ -108,7 +108,7 @@ console.log(fromGeez("፱፼፱፻፺፱")); // 9999
 You can check if a string contains valid Geez numerals:
 
 ```typescript
-import { isGeezNumeral } from "geez-number-converter";
+import { isGeezNumeral } from "@onesamket/geez-number";
 
 console.log(isGeezNumeral("፩፻፳፫")); // true
 console.log(isGeezNumeral("123")); // false
@@ -122,7 +122,7 @@ console.log(isGeezNumeral("፩፻A")); // false
 The library provides formatting options for Geez numerals:
 
 ```typescript
-import { formatGeez } from "geez-number-converter";
+import { formatGeez } from "@onesamket/geez-number";
 
 // Adding prefix and suffix
 console.log(formatGeez(42, { prefix: "Number: ", suffix: " in Geez" }));
@@ -149,7 +149,7 @@ console.log(
 
 ```tsx
 import React, { useState } from "react";
-import { toGeez, fromGeez, isGeezNumeral } from "geez-number-converter";
+import { toGeez, fromGeez, isGeezNumeral } from "@onesamket/geez-number";
 
 const GeezConverter: React.FC = () => {
   const [arabicNumber, setArabicNumber] = useState<number>(0);
@@ -220,7 +220,7 @@ export default GeezConverter;
 
 ```typescript
 import readline from "readline";
-import { toGeez, fromGeez, isGeezNumeral } from "geez-number-converter";
+import { toGeez, fromGeez, isGeezNumeral } from "@onesamket/geez-number";
 
 const rl = readline.createInterface({
   input: process.stdin,
