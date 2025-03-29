@@ -1,3 +1,4 @@
+import { describe, test, expect } from 'vitest'
 import { toGeez, fromGeez, isGeezNumeral, formatGeez } from "./index"
 
 describe("toGeez", () => {
