@@ -259,12 +259,7 @@ promptUser();
    - Ensure that you're passing a positive integer to the `toGeez()` function.
    - Negative numbers, zero, and floating-point numbers are not supported.
 
-2. **Numbers larger than 9999 are not supported**
-
-   - The library currently supports numbers up to 9999.
-   - For larger numbers, consider breaking them down into smaller components.
-
-3. **Invalid Geez numeral character**
+2. **Invalid Geez numeral character**
    - Ensure that the string passed to `fromGeez()` contains only valid Geez numeral characters.
    - Use `isGeezNumeral()` to validate input before conversion.
 
