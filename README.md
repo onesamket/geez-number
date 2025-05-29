@@ -65,11 +65,6 @@ console.log(toGeez(101)); // ፻፩
 console.log(toGeez(250)); // ፪፻፶
 console.log(toGeez(999)); // ፱፻፺፱
 
-// Thousands
-console.log(toGeez(1000)); // ፼
-console.log(toGeez(1001)); // ፼፩
-console.log(toGeez(1234)); // ፩፼፪፻፴፬
-console.log(toGeez(9999)); // ፱፼፱፻፺፱
 ```
 
 ### Converting Geez Numerals to Numbers
@@ -90,17 +85,8 @@ console.log(fromGeez("፲፭")); // 15
 console.log(fromGeez("፵፪")); // 42
 console.log(fromGeez("፺፱")); // 99
 
-// Hundreds
-console.log(fromGeez("፻")); // 100
-console.log(fromGeez("፻፩")); // 101
-console.log(fromGeez("፪፻፶")); // 250
-console.log(fromGeez("፱፻፺፱")); // 999
 
-// Thousands
-console.log(fromGeez("፼")); // 1000
-console.log(fromGeez("፼፩")); // 1001
-console.log(fromGeez("፩፼፪፻፴፬")); // 1234
-console.log(fromGeez("፱፼፱፻፺፱")); // 9999
+
 ```
 
 ### Validating Geez Numerals
